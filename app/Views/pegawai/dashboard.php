@@ -84,12 +84,12 @@ $AbsenDetailModel = new AbsenDetailModel();
 
                     <div class="profile-header">
                         <h1>Welcome, <?= $pegawai->nama_pegawai; ?></h1>
-                        <div class="profile-header-content" style="background: #1273eb;">
+                        <div class="profile-header-content" style="background: #3468C0;">
                             <div class="profile-header-tiles">
                                 <div class="row gutters">
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                                         <div class="profile-tile">
-                                            <span class="icon" style="background: #1273eb;">
+                                            <span class="icon" style="background: #3468C0;">
                                                 <i class="icon-server"></i>
                                             </span>
                                             <h6>Name - <span><?= $pegawai->nama_pegawai; ?></span></h6>
@@ -97,7 +97,7 @@ $AbsenDetailModel = new AbsenDetailModel();
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                                         <div class="profile-tile">
-                                            <span class="icon" style="background: #1273eb;">
+                                            <span class="icon" style="background: #3468C0;">
                                                 <i class="icon-award"></i>
                                             </span>
                                             <h6>NIP - <span><?= $pegawai->nip; ?></span></h6>
@@ -105,7 +105,7 @@ $AbsenDetailModel = new AbsenDetailModel();
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                                         <div class="profile-tile">
-                                            <span class="icon" style="background: #1273eb;">
+                                            <span class="icon" style="background: #3468C0;">
                                                 <i class="icon-email"></i>
                                             </span>
                                             <h6><span><?= $pegawai->email; ?></span></h6>
