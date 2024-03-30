@@ -120,7 +120,7 @@
                                 </div>
                                 <p>Status Izin : <?= ($detail_absensi->status_izin == 0) ? '<span class="badge bg-warning">Pending</span>' : '<span class="badge bg-success">Di Setujui</span>'; ?></p>
 
-                                <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-danger mt-2" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;width: 100%;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 2%">Kembali</span></a>
+                                <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-danger mt-2" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
                             <?php endif; ?>
 
                         </div>

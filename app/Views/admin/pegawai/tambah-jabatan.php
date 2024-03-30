@@ -76,7 +76,13 @@
             <div class="row gutters">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="card">
-                        <div class="card-header">
+                        <script src="https://kit.fontawesome.com/42fc19a824.js" crossorigin="anonymous"></script>
+                        <div class="card-header" style="padding:0.50rem 1.25rem 0 1.25rem">
+                            <div class="d-flex justify-content-start w-100">
+                                <a href="<?= base_url('admin/jabatan'); ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                            </div>
+                        </div>
+                        <div class="card-header" style="padding:0.25rem 1.25rem 0 1.25rem">
                             <div class="card-title">Form Jabatan</div>
                             <div class="d-flex justify-content-end">
                                 <a href="javascript:void(0);" class="btn btn-primary tambah-baris">Tambah Baris</a>

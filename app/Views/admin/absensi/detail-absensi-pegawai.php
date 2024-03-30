@@ -77,7 +77,7 @@
             <div class="row gutters">
 
                 <div class="d-flex justify-content-start">
-                    <a href="<?= base_url('admin/absen'); ?>/<?= $absensi->kode_absensi; ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;width: 100%;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 2%">Kembali</span></a>
+                    <a href="<?= base_url('admin/absen'); ?>/<?= $absensi->kode_absensi; ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
                 </div>
                 <h5>DETAIL ABSENSI <span style="text-transform: uppercase;"><?= $detail_absensi->nama_pegawai; ?></span></h5>
 

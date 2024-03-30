@@ -70,11 +70,16 @@
 
     <!-- Content wrapper scroll start -->
     <div class="content-wrapper-scroll">
+        <script src="https://kit.fontawesome.com/42fc19a824.js" crossorigin="anonymous"></script>
+
         <!-- Content wrapper start -->
         <div class="content-wrapper">
             <!-- ROW -->
             <div class="row">
                 <?php if ($absensi->absen_masuk == null) : ?>
+                    <div class="d-flex justify-content-start w-100">
+                        <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                    </div>
                     <h4>Absen Masuk</h4>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="card">
@@ -105,6 +110,9 @@
                 <?php endif; ?>
 
                 <?php if ($absensi->absen_masuk != null) : ?>
+                    <div class="d-flex justify-content-start w-100">
+                        <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                    </div>
                     <h4>Absen Pulang</h4>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="card">
