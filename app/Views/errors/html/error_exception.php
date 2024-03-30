@@ -135,8 +135,8 @@
 					<table>
 						<thead>
 							<tr>
-								<th>Key</th>
-								<th>Value</th>
+								<th style="background-color:#3468C0">Key</th>
+								<th style="background-color:#3468C0">Value</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -165,8 +165,8 @@
 					<table>
 						<thead>
 							<tr>
-								<th>Key</th>
-								<th>Value</th>
+								<th style="background-color:#3468C0">Key</th>
+								<th style="background-color:#3468C0">Value</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -240,8 +240,8 @@
 					<table style="width: 100%">
 						<thead>
 							<tr>
-								<th>Key</th>
-								<th>Value</th>
+								<th style="background-color:#3468C0">Key</th>
+								<th style="background-color:#3468C0">Value</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -278,8 +278,8 @@
 					<table>
 						<thead>
 							<tr>
-								<th>Header</th>
-								<th>Value</th>
+								<th style="background-color:#3468C0">Header</th>
+								<th style="background-color:#3468C0">Value</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -327,8 +327,8 @@
 					<table>
 						<thead>
 							<tr>
-								<th>Header</th>
-								<th>Value</th>
+								<th style="background-color:#3468C0">Header</th>
+								<th style="background-color:#3468C0">Value</th>
 							</tr>
 						</thead>
 						<tbody>

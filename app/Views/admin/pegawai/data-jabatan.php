@@ -85,9 +85,9 @@
                                 <table id="datatable" class="table v-middle">
                                     <thead>
                                         <tr>
-                                            <th>Jabatan</th>
-                                            <th>ID Jabatan</th>
-                                            <th></th>
+                                            <th style="background-color:#3468C0">Jabatan</th>
+                                            <th style="background-color:#3468C0">ID Jabatan</th>
+                                            <th style="background-color:#3468C0"></th>
                                         </tr>
                                     </thead>
                                     <tbody>

@@ -135,10 +135,10 @@ $AbsenDetailModel = new AbsenDetailModel();
                                         <a href="<?= base_url('pegawai/absensi'); ?>">
                                             <table class="table">
                                                 <tr>
-                                                    <th>Absen Hari Ini</th>
+                                                    <th style="background-color:#3468C0">Absen Hari Ini</th>
                                                     <td><?= $detail_absen->tgl_absen; ?></td>
 
-                                                    <th>Masuk</th>
+                                                    <th style="background-color:#3468C0">Masuk</th>
                                                     <td>
                                                         <?php if ($detail_absen->absen_masuk == 0) : ?>
                                                             <span class="badge rounded-pill bg-danger">Belum Absen</span>
@@ -150,7 +150,7 @@ $AbsenDetailModel = new AbsenDetailModel();
                                                         <?php endif; ?>
                                                     </td>
 
-                                                    <th>Pulang</th>
+                                                    <th style="background-color:#3468C0">Pulang</th>
                                                     <td>
                                                         <?php if ($detail_absen->absen_keluar == 0) : ?>
                                                             <span class="badge bg-danger">Belum Absen</span>
@@ -159,7 +159,7 @@ $AbsenDetailModel = new AbsenDetailModel();
                                                         <?php endif; ?>
                                                     </td>
 
-                                                    <th>Izin</th>
+                                                    <th style="background-color:#3468C0">Izin</th>
                                                     <td>
                                                         <?php if ($detail_absen->izin == null) : ?>
                                                             <span class="badge bg-primary">Tidak Izin</span>

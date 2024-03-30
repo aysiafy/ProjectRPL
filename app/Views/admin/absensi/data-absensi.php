@@ -86,12 +86,12 @@
                                 <table id="datatable" class="table v-middle">
                                     <thead>
                                         <tr>
-                                            <th>Jumlah Pegawai</th>
-                                            <th>Jumlah Masuk</th>
-                                            <th>Jumlah Pulang</th>
-                                            <th>Jumlah Izin</th>
-                                            <th>Total</th>
-                                            <th></th>
+                                            <th style="background-color:#3468C0">Jumlah Pegawai</th>
+                                            <th style="background-color:#3468C0">Jumlah Masuk</th>
+                                            <th style="background-color:#3468C0">Jumlah Pulang</th>
+                                            <th style="background-color:#3468C0">Jumlah Izin</th>
+                                            <th style="background-color:#3468C0">Total</th>
+                                            <th style="background-color:#3468C0"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -134,13 +134,13 @@
                                 <table id="datatable2" class="table v-middle">
                                     <thead>
                                         <tr>
-                                            <th>Tgl</th>
-                                            <th>Jumlah Pegawai</th>
-                                            <th>Jumlah Masuk</th>
-                                            <th>Jumlah Pulang</th>
-                                            <th>Jumlah Izin</th>
-                                            <th>Total</th>
-                                            <th></th>
+                                            <th style="background-color:#3468C0">Tgl</th>
+                                            <th style="background-color:#3468C0">Jumlah Pegawai</th>
+                                            <th style="background-color:#3468C0">Jumlah Masuk</th>
+                                            <th style="background-color:#3468C0">Jumlah Pulang</th>
+                                            <th style="background-color:#3468C0">Jumlah Izin</th>
+                                            <th style="background-color:#3468C0">Total</th>
+                                            <th style="background-color:#3468C0"></th>
                                         </tr>
                                     </thead>
                                     <tbody>

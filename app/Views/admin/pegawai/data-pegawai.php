@@ -99,11 +99,11 @@
                                 <table id="table-excel-pdf" class="table v-middle">
                                     <thead>
                                         <tr>
-                                            <th>Pegawai</th>
-                                            <th>Jabatan</th>
-                                            <th>Status</th>
-                                            <th>Email</th>
-                                            <th></th>
+                                            <th style="background-color:#3468C0">Pegawai</th>
+                                            <th style="background-color:#3468C0">Jabatan</th>
+                                            <th style="background-color:#3468C0">Status</th>
+                                            <th style="background-color:#3468C0">Email</th>
+                                            <th style="background-color:#3468C0"></th>
                                         </tr>
                                     </thead>
                                     <tbody>

@@ -86,11 +86,11 @@
                                 <table id="datatable2" class="table v-middle">
                                     <thead>
                                         <tr>
-                                            <th>Pegawai</th>
-                                            <th>Absen Masuk</th>
-                                            <th>Absen Pulang</th>
-                                            <th>Izin</th>
-                                            <th></th>
+                                            <th style="background-color:#3468C0">Pegawai</th>
+                                            <th style="background-color:#3468C0">Absen Masuk</th>
+                                            <th style="background-color:#3468C0">Absen Pulang</th>
+                                            <th style="background-color:#3468C0">Izin</th>
+                                            <th style="background-color:#3468C0"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
