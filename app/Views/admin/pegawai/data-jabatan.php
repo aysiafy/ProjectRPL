@@ -127,7 +127,7 @@
         <!-- Content wrapper end -->
 
         <!-- App Footer start -->
-        <div class="app-footer">© Presensi Pegawai By Abduloh Malela</div>
+        <div class="app-footer">Copyright © 2024. All rights reserved.</div>
         <!-- App footer end -->
 
     </div>
