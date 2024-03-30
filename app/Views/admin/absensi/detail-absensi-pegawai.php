@@ -6,7 +6,7 @@
 				************ Main container start *************
 			************* -->
 <div class="main-container">
-
+    <script src="https://kit.fontawesome.com/42fc19a824.js" crossorigin="anonymous"></script>
     <!-- Page header starts -->
     <div class="page-header">
 
@@ -76,8 +76,8 @@
             <!-- DETAIL ABSEN -->
             <div class="row gutters">
 
-                <div class="d-flex justify-content-end">
-                    <a href="<?= base_url('admin/absen'); ?>/<?= $absensi->kode_absensi; ?>" class="btn btn-danger"><i class="icon-arrow-left"></i>Kembali</a>
+                <div class="d-flex justify-content-start">
+                    <a href="<?= base_url('admin/absen'); ?>/<?= $absensi->kode_absensi; ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;width: 100%;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 2%">Kembali</span></a>
                 </div>
                 <h5>DETAIL ABSENSI <span style="text-transform: uppercase;"><?= $detail_absensi->nama_pegawai; ?></span></h5>
 

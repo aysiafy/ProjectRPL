@@ -6,7 +6,7 @@
 				************ Main container start *************
 			************* -->
 <div class="main-container">
-
+    <script src="https://kit.fontawesome.com/42fc19a824.js" crossorigin="anonymous"></script>
     <!-- Page header starts -->
     <div class="page-header">
 
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="<?= base_url('admin/absen'); ?>/<?= $detail_absensi->kode_absensi; ?>" class="btn btn-danger stripes-btn mt-3"><i class="icon-arrow-left"></i>Kembali</a>
+                            <a href="<?= base_url('admin/absen'); ?>/<?= $detail_absensi->kode_absensi; ?>" class="btn btn-danger stripes-btn mt-3" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;width: 100%;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 2%">Kembali</span></a>
                         </div>
                     </div>
 
