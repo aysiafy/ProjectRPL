@@ -53,6 +53,14 @@ $AbsenDetailModel = new AbsenDetailModel();
                     </li>
                     <li class="dropdown">
                         <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                            <style>
+                            .avatar img {
+                                width: 50px; /* Atur lebar gambar */
+                                height: 50px; /* Atur tinggi gambar */
+                                object-fit: cover; /* Pastikan gambar menutupi seluruh area tanpa mempengaruhi rasio aspek */
+                                border-radius: 50%; /* Opsi tambahan: membuat gambar menjadi lingkaran */
+                            }
+                            </style>
                             <span class="avatar">
                                 <img src="<?= base_url(); ?>/assets/img/pegawai/<?= $pegawai->gambar; ?>" alt="User Avatar">
                             </span>

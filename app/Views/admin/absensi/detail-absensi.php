@@ -47,6 +47,14 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                            <style>
+                            .avatar img {
+                                width: 50px; /* Atur lebar gambar */
+                                height: 50px; /* Atur tinggi gambar */
+                                object-fit: cover; /* Pastikan gambar menutupi seluruh area tanpa mempengaruhi rasio aspek */
+                                border-radius: 50%; /* Opsi tambahan: membuat gambar menjadi lingkaran */
+                            }
+                            </style>
                             <span class="avatar">
                                 <img src="<?= base_url(); ?>/assets/img/pegawai/<?= $admin->gambar; ?>" alt="User Avatar">
                             </span>
@@ -79,7 +87,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex justify-content-start">
-                                <a href="<?= base_url('admin/absensi'); ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                                <a href="<?= base_url('admin/absensi'); ?>" class="btn btn-info" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
                             </div>
                             <h5 class="card-title">DETAIL ABSENSI <?= ($absensi->tgl_absen == date('d-M-Y')) ? 'HARI INI' : $absensi->tgl_absen; ?></h5>
                             <div class="table-responsive">

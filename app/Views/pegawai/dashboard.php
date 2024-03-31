@@ -53,6 +53,14 @@ $AbsenDetailModel = new AbsenDetailModel();
                     </li>
                     <li class="dropdown">
                         <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                            <style>
+                            .avatar img {
+                                width: 50px; /* Atur lebar gambar */
+                                height: 50px; /* Atur tinggi gambar */
+                                object-fit: cover; /* Pastikan gambar menutupi seluruh area tanpa mempengaruhi rasio aspek */
+                                border-radius: 50%; /* Opsi tambahan: membuat gambar menjadi lingkaran */
+                            }
+                            </style>
                             <span class="avatar">
                                 <img src="<?= base_url(); ?>/assets/img/pegawai/<?= $pegawai->gambar; ?>" alt="User Avatar">
                             </span>
@@ -135,10 +143,10 @@ $AbsenDetailModel = new AbsenDetailModel();
                                         <a href="<?= base_url('pegawai/absensi'); ?>">
                                             <table class="table">
                                                 <tr>
-                                                    <th style="background-color:#3468C0">Absen Hari Ini</th>
+                                                    <th>Absen Hari Ini</th>
                                                     <td><?= $detail_absen->tgl_absen; ?></td>
 
-                                                    <th style="background-color:#3468C0">Masuk</th>
+                                                    <th>Masuk</th>
                                                     <td>
                                                         <?php if ($detail_absen->absen_masuk == 0) : ?>
                                                             <span class="badge rounded-pill bg-danger">Belum Absen</span>
@@ -150,7 +158,7 @@ $AbsenDetailModel = new AbsenDetailModel();
                                                         <?php endif; ?>
                                                     </td>
 
-                                                    <th style="background-color:#3468C0">Pulang</th>
+                                                    <th>Pulang</th>
                                                     <td>
                                                         <?php if ($detail_absen->absen_keluar == 0) : ?>
                                                             <span class="badge bg-danger">Belum Absen</span>
@@ -159,7 +167,7 @@ $AbsenDetailModel = new AbsenDetailModel();
                                                         <?php endif; ?>
                                                     </td>
 
-                                                    <th style="background-color:#3468C0">Izin</th>
+                                                    <th>Izin</th>
                                                     <td>
                                                         <?php if ($detail_absen->izin == null) : ?>
                                                             <span class="badge bg-primary">Tidak Izin</span>

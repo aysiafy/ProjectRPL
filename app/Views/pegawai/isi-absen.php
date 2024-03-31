@@ -47,6 +47,14 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                            <style>
+                            .avatar img {
+                                width: 50px; /* Atur lebar gambar */
+                                height: 50px; /* Atur tinggi gambar */
+                                object-fit: cover; /* Pastikan gambar menutupi seluruh area tanpa mempengaruhi rasio aspek */
+                                border-radius: 50%; /* Opsi tambahan: membuat gambar menjadi lingkaran */
+                            }
+                            </style>
                             <span class="avatar">
                                 <img src="<?= base_url(); ?>/assets/img/pegawai/<?= $pegawai->gambar; ?>" alt="User Avatar">
                             </span>
@@ -78,7 +86,7 @@
             <div class="row">
                 <?php if ($absensi->absen_masuk == null) : ?>
                     <div class="d-flex justify-content-start w-100">
-                        <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                        <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-info" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
                     </div>
                     <h4>Absen Masuk</h4>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -111,7 +119,7 @@
 
                 <?php if ($absensi->absen_masuk != null) : ?>
                     <div class="d-flex justify-content-start w-100">
-                        <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-danger" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                        <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-info" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0;"><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
                     </div>
                     <h4>Absen Pulang</h4>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">

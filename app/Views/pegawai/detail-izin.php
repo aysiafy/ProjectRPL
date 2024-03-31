@@ -47,6 +47,14 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                            <style>
+                            .avatar img {
+                                width: 50px; /* Atur lebar gambar */
+                                height: 50px; /* Atur tinggi gambar */
+                                object-fit: cover; /* Pastikan gambar menutupi seluruh area tanpa mempengaruhi rasio aspek */
+                                border-radius: 50%; /* Opsi tambahan: membuat gambar menjadi lingkaran */
+                            }
+                            </style>
                             <span class="avatar">
                                 <img src="<?= base_url(); ?>/assets/img/pegawai/<?= $pegawai->gambar; ?>" alt="User Avatar">
                             </span>
@@ -78,6 +86,9 @@
                     <div class="card">
                         <div class="card-body">
                             <?php if ($detail_absensi->izin == null) : ?>
+                                <div class="d-flex justify-content-start w-100">
+                                    <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-info" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                                </div>
                                 <h5 class="card-title">
                                     Form Permohonan Izin Absensi
                                 </h5>
@@ -105,6 +116,9 @@
                                     <button type="submit" class="btn btn-primary stripes-btn">Kirim</button>
                                 </form>
                             <?php else : ?>
+                                <div class="d-flex justify-content-start w-100">
+                                    <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-info" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
+                                </div>
                                 <h5 class="card-title">
                                     Data Permohonan Izin Absensi
                                 </h5>
@@ -120,7 +134,6 @@
                                 </div>
                                 <p>Status Izin : <?= ($detail_absensi->status_izin == 0) ? '<span class="badge bg-warning">Pending</span>' : '<span class="badge bg-success">Di Setujui</span>'; ?></p>
 
-                                <a href="<?= base_url('pegawai/absensi'); ?>" class="btn btn-danger mt-2" style="display: block; text-align: left; margin: 0; padding: 10px; background-color: transparent; border: none; color: #3468C0; "><i class="fa-solid fa-chevron-left"></i><span style="margin-left: 20px">Kembali</span></a>
                             <?php endif; ?>
 
                         </div>
