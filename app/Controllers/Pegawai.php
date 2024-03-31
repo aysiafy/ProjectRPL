@@ -473,6 +473,59 @@ class Pegawai extends BaseController
     {
         return $this->response->download('assets/img/pegawai/' . $bukti_izin, null);
     }
+
+    public function cancel_izin() {
+        $id_detail_absensi = $this->request->getPost('id_detail_absensi');
+        
+        $deleteDetail = $this->AbsenDetailModel->delete($id_detail_absensi);
+    
+        if ($deleteDetail) {
+            log_message('info', 'Detail absensi deleted successfully for id_detail_absensi: ' . $id_detail_absensi);
+    
+            // Fetch the corresponding absensi record by kode_absen if necessary
+            // You would need to pass the kode_absen in the form as a hidden field
+            $kode_absen = $this->request->getPost('kode_absen');
+            $absensi = $this->AbsenModel->where('kode_absensi', $kode_absen)->first();
+    
+            if ($absensi) {
+                $dataToUpdate = [];
+        
+                if (isset($absensi['jumlah_izin']) && $absensi['jumlah_izin'] > 0) {
+                    $dataToUpdate['jumlah_izin'] = $absensi['jumlah_izin'] - 1;
+                }
+        
+                if (isset($absensi['total_pegawai']) && $absensi['total_pegawai'] > 0) {
+                    $dataToUpdate['total_pegawai'] = $absensi['total_pegawai'] - 1;
+                }
+        
+                if (!empty($dataToUpdate)) {
+                    $this->AbsenModel->update($absensi['id_absensi'], $dataToUpdate);
+                }
+            }
+
+            $newDetailData = [
+                'kode_absensi' => $kode_absen,
+                'pegawai' => session()->get('id_pegawai'),
+                // Set other necessary default values for a new absensi record
+            ];
+            $newDetail = $this->AbsenDetailModel->insert($newDetailData);
+    
+            if ($newDetail) {
+                log_message('info', 'New detail absensi record created for pegawai ID: ' . session()->get('id_pegawai'));
+                session()->setFlashdata('pesan', 'Izin berhasil dibatalkan dan absensi direset.');
+            } else {
+                log_message('error', 'Failed to create new detail absensi record for pegawai ID: ' . session()->get('id_pegawai'));
+                session()->setFlashdata('pesan', 'Izin dibatalkan namun gagal mereset absensi.');
+            }
+        } else {
+            log_message('error', 'Failed to delete detail absensi for id_detail_absensi: ' . $id_detail_absensi);
+            session()->setFlashdata('pesan', 'Gagal membatalkan izin.');
+        }
+        
+        return redirect()->to('pegawai/absensi');
+    }
+    
+    
     public function detail_absen($kode_absen)
     {
         if (session()->get('role') != 2) {

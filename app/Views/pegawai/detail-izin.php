@@ -124,7 +124,14 @@
                                 </h5>
                                 <h6 class="text-primary">Alasan</h6>
                                 <p><?= $detail_absensi->alasan; ?></p>
-
+                                <div class="d-flex justify-content-end w-100 mb-2">
+                                <form action="<?= base_url('pegawai/cancel_izin'); ?>" method="post">
+                                    <?= csrf_field() ?>
+                                    <input type="hidden" name="id_detail_absensi" value="<?= $detail_absensi->id_detail_absensi; ?>">
+                                    <input type="hidden" name="kode_absen" value="<?= $detail_absensi->kode_absensi; ?>">
+                                    <button type="submit" class="btn btn-sm btn-danger">Batal Izin</button>
+                                </form>
+                                </div>
                                 <div class="doc-block" style="padding: 13px;">
                                     <div class="doc-icon">
                                         <img src="<?= base_url('assets/template/presensi-abdul'); ?>/img/docs/file.png" alt="Doc Icon">
