@@ -506,12 +506,19 @@ class Admin extends BaseController
             <script src="' . base_url('assets/template/presensi-abdul') . '/vendor/datatables/html5.min.js"></script>
             <script src="' . base_url('assets/template/presensi-abdul') . '/vendor/datatables/buttons.print.min.js"></script>	
         ';
-
+        
         $data['judul_halaman'] = 'Data Jabatan';
         $data['judul_sidebar'] = 'Master Data';
 
-        $data['jabatan'] = $this->JabatanModel->asObject()->findAll();
         $data['admin'] = $this->AdminModel->asObject()->first();
+
+        $jabatan = $this->JabatanModel->asObject()->findAll();
+
+        foreach ($jabatan as $key => $value) {
+            $jabatan[$key]->jumlah_pegawai = $this->JabatanModel->getJumlahPegawaiPerJabatan($value->id_jabatan);
+        }
+
+        $data['jabatan'] = $jabatan;
 
         return view('admin/pegawai/data-jabatan', $data);
     }

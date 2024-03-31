@@ -93,9 +93,10 @@
                                 <table id="datatable" class="table v-middle">
                                     <thead>
                                         <tr>
-                                            <th style="background-color:#3468C0">Jabatan</th>
                                             <th style="background-color:#3468C0">ID Jabatan</th>
-                                            <th style="background-color:#3468C0"></th>
+                                            <th style="background-color:#3468C0">Jabatan</th>
+                                            <th style="background-color:#3468C0">Jumlah Pegawai</th>
+                                            <th style="background-color:#3468C0">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -104,8 +105,9 @@
                                             $no = 1;
                                             foreach ($jabatan as $j) : ?>
                                                 <tr>
-                                                    <td><?= $j->nama_jabatan; ?></td>
                                                     <td><?= $j->id_jabatan; ?></td>
+                                                    <td><?= $j->nama_jabatan; ?></td>
+                                                    <td><?= $j->jumlah_pegawai; ?></td>
                                                     <td>
                                                         <div class="actions">
                                                             <a href="javascript:void(0);" class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" data-id_jabatan="<?= $j->id_jabatan; ?>" data-nama_jabatan="<?= $j->nama_jabatan; ?>">
