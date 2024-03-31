@@ -96,12 +96,13 @@ $AbsenDetailModel = new AbsenDetailModel();
                             <div class="table-responsive">
                                 <table class="table table-bordered text-center text-nowrap">
                                     <thead>
-                                        <tr>
-                                            <td>Masuk</td>
-                                            <td>Pulang</td>
-                                            <td>Izin</td>
-                                            <td>Aksi</td>
-                                        </tr>
+                                    <tr>
+                                        <th style="background-color: #3468C0; color: white;">Masuk</th>
+                                        <th style="background-color: #3468C0; color: white;">Pulang</th>
+                                        <th style="background-color: #3468C0; color: white;">Izin</th>
+                                        <th style="background-color: #3468C0; color: white;">Aksi</th>
+                                    </tr>
+
                                     </thead>
                                     <tbody class="text-nowrap">
                                         <?php if ($absensi != null) : ?>
@@ -182,13 +183,14 @@ $AbsenDetailModel = new AbsenDetailModel();
                             <div class="table-responsive">
                                 <table class="table table-riwayat text-nowrap">
                                     <thead>
-                                        <tr>
-                                            <td>Tanggal</td>
-                                            <td>Masuk</td>
-                                            <td>Pulang</td>
-                                            <td>Izin</td>
-                                            <td>Aksi</td>
-                                        </tr>
+                                    <tr>
+                                        <th style="background-color: #3468C0; color: white;">Tanggal</th>
+                                        <th style="background-color: #3468C0; color: white;">Masuk</th>
+                                        <th style="background-color: #3468C0; color: white;">Pulang</th>
+                                        <th style="background-color: #3468C0; color: white;">Izin</th>
+                                        <th style="background-color: #3468C0; color: white;">Aksi</th>
+                                    </tr>
+
                                     </thead>
                                     <tbody>
                                         <?php if ($riwayat_absensi != null) : ?>
